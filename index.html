@@ -23,11 +23,24 @@ section{border-top:1px solid var(--line);padding:86px 0}.section-title{max-width
 .final{text-align:center;padding:105px 0}.final h2{font-family:Manrope;font-size:52px;line-height:1.04;letter-spacing:-.05em;max-width:800px;margin:12px auto 16px}.final p{color:var(--muted);max-width:590px;margin:0 auto 28px;font-size:15px}
 footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:11px;display:flex;justify-content:space-between}
 @media(max-width:900px){.price{font-size:38px}.hero,.compare{grid-template-columns:1fr}.services,.pricing{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.links{display:none}.hero{padding-top:70px}h1{font-size:53px}.retainer{align-items:flex-start;flex-direction:column}}
-@media(max-width:760px){.logo img{height:42px!important}}</style>
+
+.ecomrs-case-images{margin:70px 0 30px;padding:70px 0;border-top:1px solid rgba(82,229,154,.16)}
+.case-image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+.case-image-card{overflow:hidden;border:1px solid var(--line);background:var(--surface);border-radius:14px}
+.case-image-card a{display:block;aspect-ratio:3/2;background:var(--surface2);overflow:hidden}
+.case-image-card img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s ease}
+.case-image-card:hover img{transform:scale(1.02)}
+.case-image-meta{padding:17px 18px 19px;display:flex;flex-direction:column;gap:6px}
+.case-image-meta span{font-size:10px;letter-spacing:.14em;color:var(--accent);font-weight:800}
+.case-image-meta b{font-family:Manrope;font-size:15px}
+.asset-note{margin-top:18px;padding:16px 18px;border:1px dashed #365247;border-radius:10px;color:var(--muted);font-size:12px;line-height:1.6}
+.asset-note code{color:var(--accent2);background:#0a1510;padding:2px 5px;border-radius:4px}
+@media(max-width:700px){.case-image-grid{grid-template-columns:1fr}}
+.logo img{object-fit:contain}.footer-ecomrs-logo{object-fit:contain}@media(max-width:600px){.logo img{height:44px!important}}</style>
 <link rel="icon" type="image/png" href="assets/logo-ecomrs.png">
 </head>
 <body><div class="wrap">
-<nav><a class="logo" href="#" aria-label="ECOMRS"><img src="assets/logo-ecomrs.png" alt="ECOMRS" style="height:48px;width:auto;display:block;object-fit:contain;"></a><div class="links"><a href="#services">Послуги</a><a href="#process">Процес</a><a href="#pricing">Ціни</a><a href="#start">Почати</a></div><a class="btn primary" href="#start">Аудит — від $49</a></nav>
+<nav><a class="logo" href="#" aria-label="ECOMRS"><img src="assets/logo-ecomrs.png" alt="ECOMRS" style="height:52px;width:auto;display:block;border-radius:50%;"></a><div class="links"><a href="#services">Послуги</a><a href="#process">Процес</a><a href="#case-images">Кейси</a><a href="#pricing">Ціни</a><a href="#start">Почати</a></div><a class="btn primary" href="#start">Аудит — від $49</a></nav>
 
 <header class="hero">
 <div><div class="kicker">Klaviyo · Shopify · Утримання</div><h1>Перетворюємо <em>email</em> на систему, що повертає клієнтів і збільшує продажі.</h1><p class="lead">Знаходимо, де магазин втрачає revenue, і будуємо Klaviyo-систему: flows, сегментація, кампанії та deliverability — щоб отримувати більше продажів від уже залучених клієнтів.</p><div class="actions"><a class="btn primary" href="#pricing">Переглянути пакети</a><a class="btn" href="#start">Почати з аудиту за від $49</a></div><div class="mini"><div><b>Shopify-first</b>На основі даних магазину</div><div><b>Klaviyo</b>Lifecycle automation</div><div><b>Утримання</b>Повторні продажі</div></div></div>
@@ -120,6 +133,33 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
   </div>
 </section>
 
+<section id="case-images" class="ecomrs-case-images">
+  <div class="section-title">
+    <span class="kicker">Кейси · Візуальні докази</span>
+    <h2>Подивіться, як виглядає робота всередині Klaviyo.</h2>
+    <p>Тут можна замінити placeholder-зображення на реальні screenshots, графіки та звіти з ваших кейсів.</p>
+  </div>
+  <div class="case-image-grid">
+    <article class="case-image-card">
+      <a href="https://placehold.net/" target="_blank" rel="noopener"><img src="https://placehold.net/600x400.png" alt="Case study placeholder 1"></a>
+      <div class="case-image-meta"><span>CASE STUDY 01</span><b>Заміни на screenshot Klaviyo</b></div>
+    </article>
+    <article class="case-image-card">
+      <a href="https://placehold.net/" target="_blank" rel="noopener"><img src="https://placehold.net/600x400.png" alt="Case study placeholder 2"></a>
+      <div class="case-image-meta"><span>CASE STUDY 02</span><b>Заміни на графік revenue</b></div>
+    </article>
+    <article class="case-image-card">
+      <a href="https://placehold.net/" target="_blank" rel="noopener"><img src="https://placehold.net/600x400.png" alt="Case study placeholder 3"></a>
+      <div class="case-image-meta"><span>CASE STUDY 03</span><b>Заміни на screenshot flow</b></div>
+    </article>
+    <article class="case-image-card">
+      <a href="https://placehold.net/" target="_blank" rel="noopener"><img src="https://placehold.net/600x400.png" alt="Case study placeholder 4"></a>
+      <div class="case-image-meta"><span>CASE STUDY 04</span><b>Заміни на campaign performance</b></div>
+    </article>
+  </div>
+  <div class="asset-note"><strong>Як замінити:</strong> завантаж своє зображення в папку <code>assets/cases/</code> і заміни URL у відповідному <code>img src</code>, наприклад <code>assets/cases/case-01.png</code>.</div>
+</section>
+
 <section id="pricing"><div class="section-title"><span class="kicker">Пакети</span><h2>Почніть з малого. Розробляйте систему тоді, коли це має сенс.</h2><p>Прозорі стартові ціни для клієнтів ECOMRS. Для більших магазинів доступний індивідуальний обсяг робіт.</p></div>
 <div class="pricing">
 <article class="price-card"><h3>Klaviyo Аудит</h3><div class="price">від $49 <small>одноразово</small></div><p class="desc">Фокусований аудит перед тим, як витрачати гроші на перебудову акаунта.</p><ul class="features"><li>Перевірка акаунта та Shopify</li><li>Перевірка flows / triggers</li><li>Перевірка deliverability</li><li>Перевірка сегментації</li><li>Пріоритетні можливості</li><li>План дій</li></ul><a class="btn" href="https://wa.me/380636978010?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%20Klaviyo-%D0%B0%D1%83%D0%B4%D0%B8%D1%82%20%D0%B7%D0%B0%20%2449." target="_blank" rel="noopener">Замовити аудит</a></article>
@@ -133,7 +173,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <section><div class="compare"><div class="box"><span class="kicker">Для брендів</span><h3>Розробка власної retention-системи.</h3><p>Підходить, якщо вам потрібна якісна Klaviyo-основа та спеціаліст, який побудує систему разом із вашою командою.</p><ul><li>Фіксований обсяг проєкту</li><li>Дизайн під ваш бренд</li><li>Flows створені та протестовані в Klaviyo</li><li>Зрозумілий handover</li></ul></div><div class="box"><span class="kicker">Для агенцій</span><h3>White-label Klaviyo delivery.</h3><p>Використовуйте ECOMRS як команду виконання, зберігаючи відносини з клієнтом і стратегічний контроль.</p><ul><li>White-label delivery</li><li>Розробка flows + кампаній</li><li>QA перед передачею клієнту</li><li>Системний onboarding</li></ul></div></div></section>
 
 <section id="start" class="final"><span class="kicker">Почніть тут</span><h2>Спочатку дізнайтеся, що потрібно виправити.</h2><p>Надішліть URL Shopify-магазину. Ми почнемо з Klaviyo-аудиту за від $49 і покажемо пріоритетні можливості для покращення.</p><a class="btn primary" href="https://wa.me/380636978010?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%20Klaviyo-%D0%B0%D1%83%D0%B4%D0%B8%D1%82%20%D0%B7%D0%B0%20%2449." target="_blank" rel="noopener">Замовити аудит за від $49</a></section>
-<footer><span>© 2026 ECOMRS</span><span>Klaviyo · Shopify · Утримання</span></footer>
+<footer><img class="footer-ecomrs-logo" src="assets/logo-ecomrs.png" alt="ECOMRS" style="height:64px;width:auto;border-radius:50%;margin-bottom:12px;"><span>© 2026 ECOMRS</span><span>Klaviyo · Shopify · Утримання</span></footer>
 </div>
 
 
